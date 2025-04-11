@@ -54,7 +54,7 @@
                         <h3>Get Bonus</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded">
+                    <div id="transection-box" class="box border p-4 text-center rounded">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transaction History</h3>
                     </div>
@@ -67,7 +67,9 @@
 
                             <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                                 <div class="card-body">
-                                    <select class="select border-none">
+
+                                    <select id="allbank" class="select border-none">
+
                                         <legend>Select Bank</legend>
                                         <option disabled selected>Select Payment Method</option>
                                         <option value="Bkash">Bkash</option>
@@ -75,6 +77,7 @@
                                         <option value="Rocket">Rocket</option>
                                         <option value="DBBL">DBBL</option>
                                     </select>
+
                                     <fieldset class="fieldset ">
                                         <label class="fieldset-label">Account Number</label>
                                         <input value="01301301302" id="account-number" type="number" class="input"
@@ -108,13 +111,26 @@
                         <button id="cash-outbtn" class="btn btn-neutral mr-15 border-none bg-yellow-700 mt-4 flex justify-center items-center">Cash Out</button>
                     </fieldset>
                 </section>
+                <!-- transection history -->
+                 <section id="transection-history">
+                    <h1 class="text-3xl text-green-400 font-bold text-center p-3">Transection History</h1>
+
+                    <div id="transaction-container">
+
+                    </div>
+
+
+                 </section>
             </section>
 
         </header>
     </section>
-    <script src="Script/addMoney.js"></script>
-    <script src="Script/toggle.js"></script>
-    <script src="Script/cashout.js"></script>
+    <script src="Utilites/toggle.js"></script>
+    <script src="Utilites/utilities.js"></script>
+    <script src="script.js/addmoney.js"></script>
+    <script src="script.js/cashout.js"></script>
+    <script src="script.js/transectionhistory.js"></script>
+    
 </body>
 
 </html>
